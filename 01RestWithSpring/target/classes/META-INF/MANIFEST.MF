@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: joaogpb
+Build-Jdk: 11.0.6
+Implementation-Title: rest-with-spring
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: br.com.joao
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/rest-with-spring
+Created-By: Maven Integration for Eclipse
+
