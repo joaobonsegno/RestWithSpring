@@ -2,7 +2,7 @@ package br.com.joao.utils;
 
 import org.springframework.web.bind.annotation.PathVariable;
 
-import br.com.joao.exception.UnsuportedMathOperationException;
+import br.com.joao.exception.ResourceNotFoundException;
 
 public class Operations {
 	// Response do servidor fica dentro deste método

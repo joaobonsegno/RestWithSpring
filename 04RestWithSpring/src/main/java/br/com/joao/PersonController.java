@@ -1,6 +1,6 @@
 package br.com.joao;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -37,14 +37,14 @@ public class PersonController {
 	
 	@RequestMapping(value="/{id}",
 					method=RequestMethod.DELETE)
-	public String delete(@PathVariable("id") int id) {
-		return services.delete(id);
+	public void delete(@PathVariable("id") Long id) {
+		services.delete(id);
 	}
 	
 	
 	@RequestMapping(method=RequestMethod.GET, 
 					produces=MediaType.APPLICATION_JSON_VALUE)
-	public ArrayList<Person> findAll() {
+	public List<Person> findAll() {
 		return services.findAll();
 	}
 	
@@ -52,12 +52,12 @@ public class PersonController {
 	@RequestMapping(value="/{id}", 
 				    method=RequestMethod.GET, 
 				    produces=MediaType.APPLICATION_JSON_VALUE)
-	public Person findById(@PathVariable("id") String id) {
+	public Person findById(@PathVariable("id") Long id) {
 		return services.findById(id);
 	}
 	
 	
-	
+	 
 	
 	// Annotation: @RequestMapping
 	// Rota: (value="/cadastro, method=RequestMethod.GET)
