@@ -1,4 +1,4 @@
-package br.com.joao.model;
+package br.com.joao.data.model;
 
 import java.io.Serializable;
 
